@@ -3,7 +3,6 @@ require 'item.rb'
 
 RSpec.describe(Cart) do
   it do
-    cart = Cart.new
 
     cart = cart.new
     cart.add(item.new("apple", "100"))
