@@ -1,17 +1,14 @@
-require 'item.rb'
-
 class Cart
 
-  attr_accessor :items
-  item = Items.new
+  def initialize
+    @items = []
+  end
 
   def add(item)
-    
+    @items << item
   end
 
   def get_total
-    total = 0
-    item.values.each {|val| total += val}
-    total
+    items.map(&:price).inject(&:+)
   end
 end
