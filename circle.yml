@@ -1,0 +1,5 @@
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: peaceful-journey-66828
